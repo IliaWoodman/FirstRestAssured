@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7ce6c06-e84f-44e2-9c72-bd876db53894" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aJ63hLRIi9hKolT5clGumz9hzx" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.PetStoreTest.fifthGetTest">
+    <configuration name="PetStoreTest.fifthGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
+      <option name="METHOD_NAME" value="fifthGetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreTest.fourethGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
+      <option name="METHOD_NAME" value="fourethGetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreTest.fourthGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
+      <option name="METHOD_NAME" value="fourthGetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreTest.secondGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
+      <option name="METHOD_NAME" value="secondGetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreTest.secondPostTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
+      <option name="METHOD_NAME" value="secondPostTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PetStoreTest.fifthGetTest" />
+        <item itemvalue="JUnit.PetStoreTest.fourethGetTest" />
+        <item itemvalue="JUnit.PetStoreTest.secondGetTest" />
+        <item itemvalue="JUnit.PetStoreTest.fourthGetTest" />
+        <item itemvalue="JUnit.PetStoreTest.secondPostTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7ce6c06-e84f-44e2-9c72-bd876db53894" name="Default Changelist" comment="" />
+      <created>1586441151028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586441151028</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586446057654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586446057654" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586530166262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586530166262" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586530166262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586530166262" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586530166262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586530166262" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586530166262">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586530166262" />
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1586524990153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586524990153" />
+    <state x="209" y="109" key="new project wizard" timestamp="1586507955463">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586507955463" />
+  </component>
+</project>
