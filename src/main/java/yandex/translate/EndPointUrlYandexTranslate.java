@@ -16,4 +16,14 @@ public enum EndPointUrlYandexTranslate {
         return path + additionalPath;
     }
 
+    public static void main(String[] args) {
+        EndPointUrlYandexTranslate qwerty = TRANSLATE;
+        qwerty.path = "qwe";
+        System.out.println(qwerty.path);
+        System.out.println(qwerty.getPath());
+        System.out.println(TRANSLATE.path );
+        EndPointUrlYandexTranslate asd = TRANSLATE;
+        System.out.println(TRANSLATE.path);
+    }
+
 }

@@ -21,9 +21,10 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class PetStoreTest {
-    private static final String URL_KEY = "https://petstore.swagger.io/v2";
 
-    // теты могут быть не актуальны на момент воспроизведения, т.к. пэтстор в общем доступе и постоянно изменяется;
+
+    private static final String URL_KEY = "https://petstore.swagger.io/v2";
+    // тесты могут быть не актуальны на момент воспроизведения, т.к. пэтстор в общем доступе и постоянно изменяется;
     @Test
     public void firstGetTest() {
         RestAssured.baseURI = URL_KEY;
@@ -92,6 +93,19 @@ public class PetStoreTest {
                 .body("id",equalTo(780));
         System.out.println(response.getBody().asString());
     }
+    @Test
+    public void sixthGetTest(){
+        RestAssured.baseURI = URL_KEY;
+        String expectedBody = "{\"id\":781,\"name\":\"Dude335\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}";
+
+        RequestSpecification request = RestAssured.given();
+        Response response = request.get(EndPointUrlPetStore.PET.addPath("/781"));
+        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals("application/json", response.contentType());
+        Assert.assertEquals(expectedBody, response.getBody().asString());
+        response.then()
+                .body("name", equalTo("Dude335"));
+    }
 
 
     @Test
@@ -129,4 +143,39 @@ public class PetStoreTest {
         System.out.println(response.getBody().asString());
 
     }
+    @Test
+    public void thirdPostTest(){
+        RestAssured.baseURI = URL_KEY;
+        JSONObject requesteBody = new JSONObject();
+        requesteBody.put("id", 782);
+        requesteBody.put("name", "Dude336");
+        requesteBody.put("status","sold");
+
+        RequestSpecification request = RestAssured.given();
+        request.header("Content-Type", "application/json");
+        request.body(requesteBody.toString());
+        Response response = request.post(URL_KEY + EndPointUrlPetStore.PET.addPath(""));
+        Assert.assertEquals(200,response.getStatusCode());
+        System.out.println(requesteBody);
+        System.out.println(response.getBody().asString());
+    }
+    //{"id":781,"category":{"id":0,"name":"string"},"name":"Sharik2","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    @Test
+    public void firstPutTest(){
+        String expectedBody = "{\"id\":782,\"name\":\"Sharik4\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}";
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("id", 782);
+        requestBody.put("name", "Sharik4");
+        requestBody.put("status", "available");
+        RequestSpecification request = RestAssured.given();
+        request.header("Content-Type","application/json");
+        request.body(requestBody.toString());
+        Response response = request.put(URL_KEY + EndPointUrlPetStore.PET.addPath(""));
+        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals(expectedBody,response.getBody().asString());
+        System.out.println(requestBody);
+        System.out.println(response.getBody().asString());
+    }
+
+
 }
