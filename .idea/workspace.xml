@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ce6c06-e84f-44e2-9c72-bd876db53894" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/petstore/test/PetStoreWithParametrs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/yandex/translate/EndPointUrlYandexTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yandex/translate/EndPointUrlYandexTranslate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/petstore/test/PetStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/petstore/test/PetStoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/yandex/translate/EndPointUrlYandexTranslate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/yandex/translate/EndPointUrlYandexTranslate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/petstore/test/PetStoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/petstore/test/PetStoreTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,52 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.PetStoreTest.firstPutTest">
-    <configuration name="EndPointUrlYandexTranslate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yandex.translate.EndPointUrlYandexTranslate" />
-      <module name="YandexTranslateRestTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="yandex.translate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PetStoreTest.fifthGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YandexTranslateRestTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="petstore.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="petstore.test" />
-      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
-      <option name="METHOD_NAME" value="fifthGetTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PetStoreTest.firstPutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YandexTranslateRestTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="petstore.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="petstore.test" />
-      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
-      <option name="METHOD_NAME" value="firstPutTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PetStoreWithParametrs.firstTest">
     <configuration name="PetStoreTest.sixthGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YandexTranslateRestTest" />
       <extension name="coverage">
@@ -105,7 +59,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetStoreTest.thirdPostTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PetStoreWithParametrs.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YandexTranslateRestTest" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +68,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="petstore.test" />
-      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreTest" />
-      <option name="METHOD_NAME" value="thirdPostTest" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreWithParametrs" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreWithParamets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreWithParamets" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreWithParamets.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreWithParamets" />
+      <option name="METHOD_NAME" value="first" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreWithParamets.sixthGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexTranslateRestTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="petstore.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="petstore.test" />
+      <option name="MAIN_CLASS_NAME" value="petstore.test.PetStoreWithParamets" />
+      <option name="METHOD_NAME" value="sixthGetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PetStoreTest.firstPutTest" />
-        <item itemvalue="JUnit.PetStoreTest.thirdPostTest" />
+        <item itemvalue="JUnit.PetStoreWithParametrs.firstTest" />
+        <item itemvalue="JUnit.PetStoreWithParamets.sixthGetTest" />
+        <item itemvalue="JUnit.PetStoreWithParamets" />
         <item itemvalue="JUnit.PetStoreTest.sixthGetTest" />
-        <item itemvalue="Application.EndPointUrlYandexTranslate" />
-        <item itemvalue="JUnit.PetStoreTest.fifthGetTest" />
+        <item itemvalue="JUnit.PetStoreWithParamets.first" />
       </list>
     </recent_temporary>
   </component>
@@ -142,41 +143,65 @@
       <option name="presentableId" value="Default" />
       <updated>1586441151028</updated>
     </task>
+    <task id="LOCAL-00001" summary="added post test and put test">
+      <created>1586702842791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586702842791</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added post test and put test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added post test and put test" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1586532667536">
+    <state x="356" y="8" key="CommitChangelistDialog2" timestamp="1586702841248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586532667536" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586591868634">
+    <state x="356" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586702841248" />
+    <state x="147" y="71" key="DiffContextDialog" timestamp="1586702853157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586591868634" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586702760964">
+    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1586702853157" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586785292756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586702760964" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586702760963">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586785292756" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586794192335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586702760963" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586702760963">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586794192335" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586794192335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586702760963" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586702760964">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586794192335" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586794192335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586702760964" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586794192335" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586794192335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586794192335" />
     <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1586524990153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586524990153" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586702855275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586702855275" />
     <state x="209" y="109" key="new project wizard" timestamp="1586507955463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586507955463" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1586789971770">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586789971770" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586701027634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

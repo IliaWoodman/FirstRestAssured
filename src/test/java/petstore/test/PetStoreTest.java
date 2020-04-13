@@ -99,7 +99,7 @@ public class PetStoreTest {
         String expectedBody = "{\"id\":781,\"name\":\"Dude335\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}";
 
         RequestSpecification request = RestAssured.given();
-        Response response = request.get(EndPointUrlPetStore.PET.addPath("/781"));
+        Response response = request.get(EndPointUrlPetStore.PET.addPath("/4"));
         Assert.assertEquals(200,response.getStatusCode());
         Assert.assertEquals("application/json", response.contentType());
         Assert.assertEquals(expectedBody, response.getBody().asString());
