@@ -1,5 +1,6 @@
 package petstore.test;
 
+import categoriesMarker.GetTests;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.restassured.RestAssured;
 import io.restassured.common.mapper.TypeRef;
@@ -10,8 +11,17 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.junit.Assert;
+import org.junit.experimental.categories.Category;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import petstore.EndPointUrlPetStore;
+import org.junit.experimental.categories.Category;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import org.junit.experimental.categories.Category;
 
 import java.util.Date;
 import java.util.List;
@@ -20,12 +30,14 @@ import java.util.Map;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+@RunWith(Parameterized.class)
 public class PetStoreTest {
 
-
     private static final String URL_KEY = "https://petstore.swagger.io/v2";
+
     // тесты могут быть не актуальны на момент воспроизведения, т.к. пэтстор в общем доступе и постоянно изменяется;
     @Test
+    @Category(value = {GetTests.class})
     public void firstGetTest() {
         RestAssured.baseURI = URL_KEY;
 
@@ -39,6 +51,7 @@ public class PetStoreTest {
     }
 
     @Test
+    @Category(value = {GetTests.class})
     public void secondGetTest() {
         RestAssured.baseURI = "https://petstore.swagger.io/v2";
 
@@ -59,6 +72,7 @@ public class PetStoreTest {
     }
 
     @Test
+    @Category(value = {GetTests.class})
     public void thirdGetTest() {
         RestAssured.baseURI = URL_KEY;
         given()
@@ -73,6 +87,7 @@ public class PetStoreTest {
                         "[31].tags[0].id", equalTo(0));
 
     }
+
     @Test
     public void fourthGetTest() {
         RequestSpecification request = RestAssured.given();
@@ -81,26 +96,28 @@ public class PetStoreTest {
 
         // Assert.assertEquals(statusCode, 200);
         String answer = "{\"id\":779,\"name\":\"Dude333\",\"photoUrls\":[],\"tags\":[]}";
-        Assert.assertEquals(answer,response.getBody().asString());
+        Assert.assertEquals(answer, response.getBody().asString());
 
     }
+
     @Test
-    public void fifthGetTest(){
+    public void fifthGetTest() {
         RestAssured.baseURI = URL_KEY;
         RequestSpecification request = RestAssured.given();
         Response response = request.get("/pet/780");
         request.then()
-                .body("id",equalTo(780));
+                .body("id", equalTo(780));
         System.out.println(response.getBody().asString());
     }
+
     @Test
-    public void sixthGetTest(){
+    public void sixthGetTest() {
         RestAssured.baseURI = URL_KEY;
         String expectedBody = "{\"id\":781,\"name\":\"Dude335\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}";
 
         RequestSpecification request = RestAssured.given();
         Response response = request.get(EndPointUrlPetStore.PET.addPath("/4"));
-        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals(200, response.getStatusCode());
         Assert.assertEquals("application/json", response.contentType());
         Assert.assertEquals(expectedBody, response.getBody().asString());
         response.then()
@@ -123,56 +140,59 @@ public class PetStoreTest {
         String successCode = response.jsonPath().get("SuccessCode");
         System.out.println(response.getBody().asString());
     }
+
     @Test
-    public void secondPostTest(){
+    public void secondPostTest() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("id", 780);
         requestBody.put("name", "Dude334");
         requestBody.put("status", "sold");
 
         RequestSpecification request = RestAssured.given();
-        request.header("Content-Type","application/json");
+        request.header("Content-Type", "application/json");
         request.body(requestBody.toString());
         Response response = request.post(URL_KEY + EndPointUrlPetStore.PET.addPath(""));
         String contentType = response.getContentType();
         int statusCode = response.getStatusCode();
         String answer = "{\"id\":780,\"name\":\"Dude334\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}";
         Assert.assertEquals("application/json", contentType);
-        Assert.assertEquals(200,statusCode);
-        Assert.assertEquals(answer,response.getBody().asString());
+        Assert.assertEquals(200, statusCode);
+        Assert.assertEquals(answer, response.getBody().asString());
         System.out.println(response.getBody().asString());
 
     }
+
     @Test
-    public void thirdPostTest(){
+    public void thirdPostTest() {
         RestAssured.baseURI = URL_KEY;
         JSONObject requesteBody = new JSONObject();
         requesteBody.put("id", 782);
         requesteBody.put("name", "Dude336");
-        requesteBody.put("status","sold");
+        requesteBody.put("status", "sold");
 
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type", "application/json");
         request.body(requesteBody.toString());
         Response response = request.post(URL_KEY + EndPointUrlPetStore.PET.addPath(""));
-        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals(200, response.getStatusCode());
         System.out.println(requesteBody);
         System.out.println(response.getBody().asString());
     }
+
     //{"id":781,"category":{"id":0,"name":"string"},"name":"Sharik2","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
     @Test
-    public void firstPutTest(){
+    public void firstPutTest() {
         String expectedBody = "{\"id\":782,\"name\":\"Sharik4\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}";
         JSONObject requestBody = new JSONObject();
         requestBody.put("id", 782);
         requestBody.put("name", "Sharik4");
         requestBody.put("status", "available");
         RequestSpecification request = RestAssured.given();
-        request.header("Content-Type","application/json");
+        request.header("Content-Type", "application/json");
         request.body(requestBody.toString());
         Response response = request.put(URL_KEY + EndPointUrlPetStore.PET.addPath(""));
-        Assert.assertEquals(200,response.getStatusCode());
-        Assert.assertEquals(expectedBody,response.getBody().asString());
+        Assert.assertEquals(200, response.getStatusCode());
+        Assert.assertEquals(expectedBody, response.getBody().asString());
         System.out.println(requestBody);
         System.out.println(response.getBody().asString());
     }
